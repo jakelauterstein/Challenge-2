@@ -19,7 +19,7 @@ h1{
 }
 
 a:hover{
-    color:#e07be0;
+    color: #69efef;
   }
 .work img:hover {
     opacity: .7;
@@ -103,7 +103,7 @@ text-align: center;
 }
 
 .about-quarter-box {
-    background-color: rgb(244, 240, 2);
+    background-color: rgb(250, 247, 69);
     width: 25%;
     justify-content: space-between;
 }
@@ -119,12 +119,13 @@ text-align: center;
     width: 25%;
     justify-content: center;
     align-items:center;
+    flex-wrap: wrap;
 }
 .contact-fifth-box {
-    background-color: rgb(248, 122, 246);
+    background-color: rgb(250, 158, 248);
     width: 20%;
-    justify-content: center;
-    align-items:center;
+    justify-content: left;
+    align-items:left;
 }
 
 .yellow-box {
@@ -141,10 +142,10 @@ text-align: center;
 .pink-box {
     background-color:rgb(251, 77, 219);
     
-    align-items:center
+    align-items:left
 }
 .green-box {
-    background-color: rgb(71, 238, 11);
+    background-color: rgb(142, 245, 105);
     width: 100%;
     align-items:center
 }
@@ -154,7 +155,6 @@ text-align: center;
     display:flex;
     flex-direction: row;
     justify-content:space-around;
-   
     flex-wrap: wrap;
 }
 
@@ -164,4 +164,85 @@ text-align: center;
     justify-content:space-around;
    
     flex-wrap: wrap;
+}
+.contact-me ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    padding: 0;
+    overflow: hidden;
+}
+
+  
+.contact-me li a {
+    
+    color: white;
+    text-align: left;
+    padding: 16px;
+    text-decoration: none;
+  }
+
+  .contact-me li a:hover {
+    color: #69efef;
+
+  }
+
+.contact-me ul > li {
+    display: inline-block;
+    margin-left: 6%;
+}
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    header {
+      padding-bottom: 0;
+      justify-content: center;
+    }
+  
+    header h1 {
+      width: 100%;
+      text-align: center;
+    }
+  
+    header nav ul {
+      margin-top: 20px;
+      width: 100%;
+      justify-content: center;
+    }
+  
+    header nav ul li a {
+      font-size: 20px;
+    }
+}
+    
+  /* MEDIA QUERY FOR TABLETS AND SMALLER */
+  @media screen and (max-width: 768px) {
+    section {
+      padding: 30px 15px;
+    }
+  
+    h1 {
+        font-size: smaller;
+    }
+}
+  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+  @media screen and (max-width: 575px) {
+
+    h1 {
+        font-size: smaller;
+    }
+
+    .work-quarter-box{
+        display:flex;
+        flex-direction: column;
+    }
+
+    .contact-me {
+        display:flex;
+        flex-direction: column;
+    }
+    
+    
+
 }
