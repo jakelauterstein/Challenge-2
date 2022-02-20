@@ -46,6 +46,13 @@ p{
     text-align: center;
 }
 
+h2{
+    margin-left: 1em;;
+}
+h1{
+    margin-left: 2em;;
+}
+
 ul {
     list-style-type: none;
     margin-top: 10px;
@@ -110,7 +117,7 @@ text-align: center;
 .headshot-resize img {
     max-width: 10em;
     max-height: 10em;
-
+    align-items: center;
 }
 
 
@@ -218,9 +225,7 @@ text-align: center;
     
   /* MEDIA QUERY FOR TABLETS AND SMALLER */
   @media screen and (max-width: 768px) {
-    section {
-      padding: 30px 15px;
-    }
+   
   
     h1 {
         font-size: smaller;
